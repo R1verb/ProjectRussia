@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    overflow-x: hidden; /* Запретить горизонтальный скролл */
-    overflow-y: auto; /* Разрешить вертикальный скролл при необходимости */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -76,6 +76,7 @@ body {
     word-spacing: 2px;
     padding-top: 115px;
     font-size: 38px;
+    font-weight: 734px;
 }
 
 .textDown {
@@ -143,6 +144,70 @@ body {
 .textRinok {
     color: #999999;
 }
+
+
+
+
+
+
+
+.project {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.projectText {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #404149;
+    font-weight: 506px;
+}
+
+.projectImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.blockInfo {
+    text-align: left;
+}
+.rectPng {
+    height: 260px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.orangeBlock {
+    margin-top: 20px;
+    height: 4px;
+    width: 40px;
+    background: #F7654A;
+    margin-left: 8px;
+}
+.projName {
+    font-family: 'Oswald', sans-serif;
+    color: #404149;
+    font-weight: 142px;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 13px;
+}
+.projInfo {
+    color: #999999;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+
+
+
+
 
 
 
@@ -226,6 +291,9 @@ body {
     }
     .textLet {
         font-size: 30px;
+    }
+    .project {
+        padding-top: 700px;
     }
 }
 @media (max-width: 250px) {
