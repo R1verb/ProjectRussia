@@ -249,6 +249,11 @@ body {
         font-size: 15px;
     }
 }
+@media (max-width: 414px) {
+    .blockWhite {
+        width: 412px;
+    }
+}
 @media (max-width: 400px) {
     .blockWhite {
         width: 300px;
