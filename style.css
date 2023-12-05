@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.block {
+    background: url(back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 523px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.burgerMenu {
+    height: 50px;
+    width: 50px;
+    background: #F7654A;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.burgerMenu span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    left: 13px;
+}
+
+.one {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+}
+
+.two {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    top: 24px;
+}
+
+.three {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    bottom: 14px;
+}
+
+.textUp {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+    word-spacing: 2px;
+    padding-top: 115px;
+    font-size: 38px;
+    font-weight: 734px;
+}
+
+.textDown {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.blockWhite {
+    position: absolute;
+    background: #fff;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 420px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.fullBlock {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock4 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.text26 {
+    color: #F7654A;
+    font-size: 40px;
+}
+
+.textLet {
+    font-size: 20px;
+}
+
+.textRinok {
+    color: #999999;
+}
+
+
+
+
+
+
+
+.project {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.projectText {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #404149;
+    font-weight: 506px;
+}
+
+.projectImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.blockInfo {
+    text-align: left;
+}
+.rectPng {
+    height: 260px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.orangeBlock {
+    margin-top: 20px;
+    height: 4px;
+    width: 40px;
+    background: #F7654A;
+    margin-left: 8px;
+}
+.projName {
+    font-family: 'Oswald', sans-serif;
+    color: #404149;
+    font-weight: 142px;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 13px;
+}
+.projInfo {
+    color: #999999;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .blockWhite {
+        width: 600px;
+        height: 150px;
+        top: 450px;
+    }
+    .burgerMenu {
+        margin-right: 10px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .blockWhite {
+        top: 430px;
+    }
+}
+@media (max-width: 600px) {
+    .blockWhite {
+        width: 400px;
+        height: 100px;
+        top: 470px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 17px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 30px;
+    }
+    .textLet {
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px) {
+    .blockWhite {
+        width: 300px;
+        height: 100px;
+        top: 477px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 30px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 22px;
+    }
+    .textLet {
+        font-size: 11px;
+    }
+}
+@media (max-width: 300px) {
+    .blockWhite {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 200px;
+        height: 600px;
+        top: 524px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 60px;
+    }
+    .textLet {
+        font-size: 30px;
+    }
+    .project {
+        padding-top: 700px;
+    }
+}
+@media (max-width: 250px) {
+    .textUp {
+        word-spacing: 2px;
+        padding-top: 115px;
+        font-size: 25px;
+    }
+    
+    .textDown {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 250px) {
+    .textDown {
+        font-size: 11px;
+        padding-top: 30px;
+    }
+    body {
+        position: fixed;
+    }
+}
