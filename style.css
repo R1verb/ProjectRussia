@@ -1,99 +1,464 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Project</title>
-</head>
-<body>
-    <div class="block">
-        <div class="header">
-            <div class="container">
-                <div class="logo">
-                    <img class="logoImg" src="logo.png">
-                </div>
-                <a href="https://vk.com/r1verb" target="_blank">
-                    <button class="burgerMenu">
-                        <span class="one"></span>
-                        <span class="two"></span>
-                        <span class="three"></span>
-                    </button>
-                </a>
-            </div>
-        </div>
-        <h1 class="textUp">РЕАЛИЗУЕМ КРУПНЕЙШИЕ<br>ПРОЕКТЫ В РОССИИ</h1>
-        <h6 class="textDown">стадионы, газопроводы, мосты, дамбы</h6>
-    </div>
-    <div class="main">
-        <div class="blockWhite">
-            <div class="fullBlock">
-                <h1 class="text26">26</h1>
-                <h3 class="textLet">ЛЕТ</h3>
-                <h5 class="textRinok">на рынке</h5>
-            </div>
-            <div class="fullBlock2">
-                <h1 class="text26">26</h1>
-                <h3 class="textLet">ЛЕТ</h3>
-                <h5 class="textRinok">на рынке</h5>
-            </div>
-            <div class="fullBlock3">
-                <h1 class="text26">26</h1>
-                <h3 class="textLet">ЛЕТ</h3>
-                <h5 class="textRinok">на рынке</h5>
-            </div>
-            <div class="fullBlock4">
-                <h1 class="text26">26</h1>
-                <h3 class="textLet">ЛЕТ</h3>
-                <h5 class="textRinok">на рынке</h5>
-            </div>
-        </div>
-        <div class="project">
-            <h2 class="projectText">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</h2>
-            <div class="container">
-                <div class="projectImage">
-                    <div class="blockInfo">
-                        <img class="rectPng" src="rect.png">
-                        <div class="orangeBlock"></div>
-                        <h4 class="projName">Газпром Арена</h4>
-                        <p class="projInfo">Мы сделали самую красивую арену в<br> Европе. Это открытие стало для нас<br> прорывной точкой для разивтия на<br> следующие десятилетия.<br> Мы очень рады данному еву.</p>
-                    </div>
-                    <div class="blockInfo">
-                        <img class="rectPng" src="rect.png">
-                        <div class="orangeBlock"></div>
-                        <h4 class="projName">Газпром Арена</h4>
-                        <p class="projInfo">Мы сделали самую красивую арену в<br> Европе. Это открытие стало для нас<br> прорывной точкой для разивтия на<br> следующие десятилетия.<br> Мы очень рады данному еву.</p>
-                    </div>
-                    <div class="blockInfo">
-                        <img class="rectPng" src="rect.png">
-                        <div class="orangeBlock"></div>
-                        <h4 class="projName">Газпром Арена</h4>
-                        <p class="projInfo">Мы сделали самую красивую арену в<br> Европе. Это открытие стало для нас<br> прорывной точкой для разивтия на<br> следующие десятилетия.<br> Мы очень рады данному еву.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="brain">
-            <div class="container">
-                <div class="brainText">
-                    <h1 class="brainUpText">
-                        САМЫЕ УМНЫЕ ПРОЕКТЫ
-                    </h1>
-                    <h5 class="brainDownText">
-                        РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!
-                    </h5>
-                </div>
-                <div class="brainBtn">
-                    <img class="brainBtnImage" src="brain.png">
-                    <b class="brainBtnText">
-                        <a class="zap" href="https://vk.com/r1verb" target="_blank">ВАШ ЗАПРОС</a>
-                    </b>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.block {
+    background: url(back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 523px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.burgerMenu {
+    height: 50px;
+    width: 50px;
+    background: #F7654A;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.burgerMenu span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    left: 13px;
+}
+
+.one {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+}
+
+.two {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    top: 24px;
+}
+
+.three {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    bottom: 14px;
+}
+
+.textUp {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+    word-spacing: 2px;
+    padding-top: 115px;
+    font-size: 38px;
+    font-weight: 734px;
+}
+
+.textDown {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.blockWhite {
+    position: absolute;
+    background: #fff;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 420px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.fullBlock {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.fullBlock4 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: none;
+    height: 130px;
+    width: 130px;
+}
+
+.text26 {
+    color: #F7654A;
+    font-size: 40px;
+}
+
+.textLet {
+    font-size: 20px;
+}
+
+.textRinok {
+    color: #999999;
+}
+
+
+
+
+
+
+
+.project {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.projectText {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #404149;
+    font-weight: 506px;
+}
+
+.projectImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.blockInfo {
+    text-align: left;
+}
+.rectPng {
+    height: 260px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.orangeBlock {
+    margin-top: 20px;
+    height: 4px;
+    width: 40px;
+    background: #F7654A;
+    margin-left: 8px;
+}
+.projName {
+    font-family: 'Oswald', sans-serif;
+    color: #404149;
+    font-weight: 142px;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 13px;
+}
+.projInfo {
+    color: #999999;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+
+
+.brain {
+    font-family: 'Oswald', sans-serif;
+    background: #F7654A;
+    height: 160px;
+    margin-top: 60px;
+}
+.brainText {
+    color: #fff;
+    padding-top: 25px;
+}
+.brainUpText {
+    font-size: 30px;
+}
+.brainDownText {
+    font-size: 15px;
+}
+
+
+.brainBtn {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 40px;
+    width: 130px;
+    padding-left: 12px;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.brainBtnImage {
+    height: 18px;
+    padding-right: 10px;
+}
+.brainBtnText {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+.zap {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .blockWhite {
+        width: 600px;
+        height: 150px;
+        top: 450px;
+    }
+    .burgerMenu {
+        margin-right: 10px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .brainBtn {
+        margin-right: 10px;
+    }
+    .brainText {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .blockWhite {
+        top: 430px;
+    }
+}
+@media (max-width: 600px) {
+    .blockWhite {
+        width: 414px;
+        height: 100px;
+        top: 470px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 17px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 30px;
+    }
+    .textLet {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .brain {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* text-align: center; */
+        background: #F7654A;
+        height: 200px;
+    }
+
+    .brainBtn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 100px;
+    }
+
+    .brainText {
+        padding-top: 0px;
+        margin-top: 0px;
+        top: 0px;
+        /* position: relative; */
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 70px;
+        padding-right: 10px;
+    }
+
+    .brainUpText {
+        font-size: 30px;
+    }
+
+    .brainDownText {
+        font-size: 15px;
+    }
+
+    .brainBtnImage {
+        height: 18px;
+        padding-right: 5px;
+    }
+
+    .brainBtnText {
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+}
+
+@media (max-width: 414px) {
+    .brainText {
+        color: #fff;
+        padding-top: 32px;
+    }
+    .brainBtn {
+        margin-top: 114px;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 400px) {
+    .blockWhite {
+        width: 300px;
+        height: 100px;
+        top: 477px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 30px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 22px;
+    }
+    .textLet {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 348px) {
+    .brainText {
+        color: #fff;
+        padding-top: 25px;
+    }
+    .brainUpText {
+        font-size: 22px;
+    }
+    .brainDownText {
+        font-size: 11px;
+    }
+    
+    
+    .brainBtn {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        height: 40px;
+        width: 130px;
+        padding-left: 2px;
+        margin-left: 60px;
+        text-align: center;
+        margin-top: 96px;
+    }
+    
+    .brainBtnImage {
+        height: 16px;
+        padding-right: 5px;
+    }
+    .brainBtnText {
+        font-size: 15px;
+        padding-bottom: 2px;
+    }
+}
+
+@media (max-width: 300px) {
+    .blockWhite {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 200px;
+        height: 600px;
+        top: 524px;
+    }
+    .fullBlock, 
+    .fullBlock2,
+    .fullBlock3,
+    .fullBlock4 {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .text26 {
+        color: #F7654A;
+        font-size: 60px;
+    }
+    .textLet {
+        font-size: 30px;
+    }
+    .project {
+        padding-top: 700px;
+    }
+}
+@media (max-width: 250px) {
+    .textUp {
+        word-spacing: 2px;
+        padding-top: 115px;
+        font-size: 25px;
+    }
+    
+    .textDown {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 250px) {
+    .textDown {
+        font-size: 11px;
+        padding-top: 30px;
+    }
+    body {
+        position: fixed;
+    }
+}
