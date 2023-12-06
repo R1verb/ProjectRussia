@@ -243,6 +243,10 @@ body {
     font-size: 14px;
     padding-bottom: 3px;
 }
+.zap {
+    text-decoration: none;
+    color: #000;
+}
 
 
 
