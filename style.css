@@ -309,6 +309,8 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-top: 90px;
+        margin-left: 100px;
     }
 
     .brainText {
@@ -319,6 +321,7 @@ body {
         color: #fff;
         font-size: 20px;
         margin-bottom: 70px;
+        padding-right: 10px;
     }
 
     .brainUpText {
@@ -345,6 +348,10 @@ body {
         color: #fff;
         padding-top: 32px;
     }
+    .brainBtn {
+        margin-top: 114px;
+        margin-left: 100px;
+    }
 }
 @media (max-width: 400px) {
     .blockWhite {
@@ -367,7 +374,40 @@ body {
     }
 }
 
-
+@media (max-width: 348px) {
+    .brainText {
+        color: #fff;
+        padding-top: 25px;
+    }
+    .brainUpText {
+        font-size: 22px;
+    }
+    .brainDownText {
+        font-size: 11px;
+    }
+    
+    
+    .brainBtn {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        height: 40px;
+        width: 130px;
+        padding-left: 2px;
+        margin-left: 60px;
+        text-align: center;
+        margin-top: 96px;
+    }
+    
+    .brainBtnImage {
+        height: 16px;
+        padding-right: 5px;
+    }
+    .brainBtnText {
+        font-size: 15px;
+        padding-bottom: 2px;
+    }
+}
 
 @media (max-width: 300px) {
     .blockWhite {
