@@ -206,6 +206,43 @@ body {
 }
 
 
+.brain {
+    font-family: 'Oswald', sans-serif;
+    background: #F7654A;
+    height: 160px;
+    margin-top: 60px;
+}
+.brainText {
+    color: #fff;
+    padding-top: 25px;
+}
+.brainUpText {
+    font-size: 30px;
+}
+.brainDownText {
+    font-size: 15px;
+}
+
+
+.brainBtn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 40px;
+    width: 130px;
+    padding-left: 12px;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.brainBtnImage {
+    height: 18px;
+    padding-right: 10px;
+}
+.brainBtnText {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
 
 
 
@@ -223,6 +260,12 @@ body {
     .logo {
         margin-left: 10px;
     }
+    .brainBtn {
+        margin-right: 10px;
+    }
+    .brainText {
+        margin-left: 10px;
+    }
 }
 @media (max-width: 1000px) {
     .blockWhite {
@@ -231,7 +274,7 @@ body {
 }
 @media (max-width: 600px) {
     .blockWhite {
-        width: 400px;
+        width: 414px;
         height: 100px;
         top: 470px;
     }
@@ -249,9 +292,58 @@ body {
         font-size: 15px;
     }
 }
+@media (max-width: 500px) {
+    .brain {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* text-align: center; */
+        background: #F7654A;
+        height: 200px;
+    }
+
+    .brainBtn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .brainText {
+        padding-top: 0px;
+        margin-top: 0px;
+        top: 0px;
+        /* position: relative; */
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+
+    .brainUpText {
+        font-size: 30px;
+    }
+
+    .brainDownText {
+        font-size: 15px;
+    }
+
+    .brainBtnImage {
+        height: 18px;
+        padding-right: 5px;
+    }
+
+    .brainBtnText {
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+}
+
 @media (max-width: 414px) {
-    .blockWhite {
-        width: 414px;
+    .brainText {
+        color: #fff;
+        padding-top: 32px;
     }
 }
 @media (max-width: 400px) {
@@ -274,6 +366,9 @@ body {
         font-size: 11px;
     }
 }
+
+
+
 @media (max-width: 300px) {
     .blockWhite {
         flex-direction: column;
