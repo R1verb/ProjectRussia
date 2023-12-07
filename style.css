@@ -70,6 +70,10 @@ body {
     left: 13px;
 }
 
+
+.telephon {
+    color: #000;
+}
 .one {
     height: 3px;
     width: 25px;
@@ -873,6 +877,9 @@ body {
         height: 18px;
         padding-right: 5px;
     }
+    .footerTextLeft {
+        padding-bottom: 28px;
+    }
 }
 @media (max-width: 469px) {
     .contactsBlock2 {
@@ -922,6 +929,90 @@ body {
     .jobsBtn {
         margin-top: 114px;
         margin-left: 100px;
+    }
+    .brain {
+        display: flex;
+        flex-direction: column;
+        background: #F7654A;
+        height: 200px;
+    }
+
+    .brainBtn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 130px;
+    }
+
+    .brainText {
+        padding-top: 0px;
+        margin-top: 0px;
+        top: 0px;
+        /* position: relative; */
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 70px;
+        padding-right: 30px;
+    }
+
+    .brainUpText {
+        font-size: 30px;
+    }
+
+    .brainDownText {
+        font-size: 15px;
+    }
+    .brainDownTextS {
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+    .brainBtnImage {
+        height: 18px;
+        padding-right: 5px;
+    }
+
+    .brainBtnText {
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        background: #F7654A;
+        height: 200px;
+    }
+    .jobsText {
+        padding-top: 0px;
+        margin-top: 0px;
+        top: 0px;
+        /* position: relative; */
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 70px;
+        padding-right: 30px;
+    }
+    .jobsUpText {
+        font-size: 30px;
+    }
+    .jobsDownText {
+        font-size: 15px;
+    }
+    .jobsBtn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 130px;
+    }
+    .jobsBtnImage {
+        height: 18px;
+        padding-right: 5px;
     }
 }
 @media (max-width: 401px) {
@@ -1231,27 +1322,3 @@ body {
         display: flex;
     }
 }
-
-
-
-/* @media (max-width: 250px) {
-    .textUp {
-        word-spacing: 2px;
-        padding-top: 115px;
-        font-size: 25px;
-    }
-    
-    .textDown {
-        font-size: 12px;
-        padding-top: 30px;
-    }
-}
-@media (max-width: 250px) {
-    .textDown {
-        font-size: 11px;
-        padding-top: 30px;
-    }
-    body {
-        position: fixed;
-    }
-} */
