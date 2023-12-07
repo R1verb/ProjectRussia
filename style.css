@@ -26,6 +26,13 @@ body {
     display: flex;
     position: relative;
 }
+.containeReviews {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+}
 
 .burgerMenu {
     height: 50px;
@@ -333,9 +340,152 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+
+
+.questionBlock {
+    padding-top: 20px;
+}
+.question {
+    text-align: left;
+}
+
+.queText {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #F7654A;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.queText span {
+    color: #999999;
+    text-transform: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.questionSText {
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+.partners {
+    height: 300px;
+    margin-top: 60px;
+    background: #404149;
+}
+.partnersText {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.partText {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.partnersAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partnersLogotype {
+    height: 40px;
+}
+.partnersLogo {
+    padding-right: 15px;
+}
+.partnersLogo1 {
+    padding-right: 15px;
+}
+
+
+
+.reviewsText {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.revText {
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.reviewsAll {
+    display: flex;
+    padding: 0 5px 0 5px;
+}
+.reviewsBlock1 {
+    height: 230px;
+    width: 280px;
+    margin-right: 30px;
+}
+.reviewsBlock2 {
+    height: 230px;
+    width: 280px;
+    margin-right: 30px;
+}
+.reviewsBlock3 {
+    height: 230px;
+    width: 280px;
+}
+
+.reviewsImage {
+    padding: 15px 0 10px 15px;
+}
+.reviewsDownText {
+    font-family: 'Oswald', sans-serif;
+    color: #999999;
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 18px;
+}
+
+.reviewsName {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    padding-left: 14px;
+    margin-top: 31px;
+    color: #000;
+}
+.reviewsName span {
+    color: #F7654A;
+}
+
+
 @media (max-width: 1000px) {
     .blockWhite {
         top: 430px;
+    }
+}
+@media (max-width: 923px) {
+    .containeReviews {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .reviewsAll {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewsBlock1 {
+        height: 230px;
+        width: 280px;
+        margin-right: 0px;
+    }
+    .reviewsBlock2 {
+        height: 230px;
+        width: 280px;
+        margin-right: 0px;
+    }
+    .reviewsBlock3 {
+        height: 230px;
+        width: 280px;
     }
 }
 @media (max-width: 900px) {
@@ -359,10 +509,18 @@ body {
     .blockAll {
         width: 700px;
     }
+    .questionBlock {
+        padding-left: 10px;
+    }
 }
 @media (max-width: 700px) {
     .blockAll {
         width: 450px;
+    }
+}
+@media (max-width: 645px) {
+    .partnersLogotype {
+        height: 30px;
     }
 }
 @media (max-width: 600px) {
@@ -383,6 +541,15 @@ body {
     }
     .textLet {
         font-size: 15px;
+    }
+}
+@media (max-width: 520px) {
+    .partnersLogotype {
+        height: 25px;
+    }
+    .partText {
+        font-size: 26px;
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 500px) {
@@ -453,6 +620,31 @@ body {
     .blockAll {
         width: 500px;
     }
+    .partnersAll {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners {
+        height: 400px;
+    }
+    .partnersText {
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+    .partnersLogotype {
+        height: 45px;
+    }
+    .partnersLogo {
+        padding-right: 0px;
+    }
+    .partnersLogo1 {
+        padding-right: 0px;
+    }
+    .reviewsAll {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 414px) {
@@ -520,8 +712,36 @@ body {
         padding-bottom: 2px;
     }
 }
-
+@media (max-width: 323px) {
+    .reviewsAll {
+        display: flex;
+        padding: 0 5px 0 5px;
+    }
+    .reviewsBlock1 {
+        height: 230px;
+        width: 250px;
+        margin-right: 0px;
+    }
+    .reviewsBlock2 {
+        height: 230px;
+        width: 250px;
+        margin-right: 0px;
+        padding-top: 30px;
+    }
+    .reviewsBlock3 {
+        height: 230px;
+        width: 250px;
+        padding-top: 60px;
+    }
+    .revText {
+        font-size: 20px;
+    }
+}
 @media (max-width: 300px) {
+    body {
+        /* position: fixed; */
+        overflow: auto;
+    }
     .blockWhite {
         flex-direction: column;
         align-items: center;
@@ -546,6 +766,39 @@ body {
     }
     .project {
         padding-top: 700px;
+    }
+    .textUp {
+        font-size: 30px;
+    }
+    .textDown {
+        font-size: 11px;
+    }
+    .projectText {
+        font-size: 20px;
+    }
+    .brainUpText {
+        font-size: 20px;
+    }
+    .brainDownText {
+        font-size: 10px;
+    }
+    .partnersAll {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners {
+        height: 400px;
+    }
+    .partnersText {
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+    .partnersLogotype {
+        height: 40px;
+    }
+    .partText {
+        font-size: 20px;
     }
 }
 @media (max-width: 250px) {
